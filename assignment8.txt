@@ -1,0 +1,10 @@
+Yael Kelmer.
+
+1. The output is: ABCabc123
+
+2. valgrind will report 7 bytes as "definitely lost". This is so, because after the function malloc() was used, the memory was not freed, so it will result in "definitely lost" memory. The memory allocated 7 bytes in the program. 
+
+3. NONE
+
+4. line 32: free(p);
+This change in code will fix the memory leak. 
